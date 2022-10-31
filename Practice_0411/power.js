@@ -5,9 +5,13 @@
 
 
 function power(base, exponent) {
-
-
+if (exponent < 1) return 1
+else {
+    return base * power(base,exponent-1) ;
 }
+}
+
+console.log(power(5,0))
 
 
 // power(2,0) // 1// power(2,2) // 4
